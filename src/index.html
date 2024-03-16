@@ -9,7 +9,7 @@
 
 <body class="bg-[#F2F9FE] w-screen dark:bg-[#111729] font-poppins text-[#223344] dark:text-white">
     <nav class="flex justify-between items-center m-6 xl:px-16">
-        <img src="/public/assets/alarado-icon-homepage.svg" alt="icon-homepage">
+        <img src="/public/assets/alarado-icon-homepage.svg" alt="icon-homepage" id="logo">
         <div class="hidden lg:flex text-sm text-[#909193] items-center font-medium w-1/3 justify-around">
             <a class="hover:text-[#111729] dark:hover:text-white" href="#">About us</a>
             <a class="hover:text-[#111729] dark:hover:text-white" href="#">Product</a>
@@ -22,21 +22,26 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </button>
-        <label class="hidden lg:flex bg-[#223344] cursor-pointer relative w-11 h-6 rounded-full" for="checkbox">
+        <label class="hidden lg:flex bg-[#223344] cursor-pointer relative w-11 h-6 rounded-full" for="toogle">
             <img src="/public/assets/Moon_fill_light.svg" alt="Moon_fill_light">
             <img src="/public/assets/Sun_fill_light.svg" alt="Sun_fill_light">
-            <input class="sr-only peer" type="checkbox" name="checkbox" id="checkbox">
-            <span  class="w-2/5 h-4/5 bg-[#F2F9FE] absolute rounded-full left-1 transition-all duration-300 top-[2px] peer-checked:left-6"></span>
+            <input class="sr-only peer" type="checkbox" name="checkbox" id="toogle">
+            <span
+                class="w-2/5 h-4/5 bg-[#F2F9FE] absolute rounded-full left-6 transition-all duration-300 top-[2px] peer-checked:left-1">
+                <img src="/public/assets/Sun_fill.svg" alt="Moon_fill" id="imageTheme">
+            </span>
         </label>
     </nav>
     <div class="flex flex-col m-6 xl:flex-row-reverse xl:justify-center xl:items-center">
         <section class="my-20 flex justify-center">
-            <img class="lg:w-[60%] xl:w-3/4" src="/public/assets/hero-image-simple-homepage.png" alt="hero-image-simple-homepage">
+            <img class="lg:w-[60%] xl:w-3/4" src="/public/assets/hero-image-simple-homepage.png"
+                alt="hero-image-simple-homepage">
         </section>
         <section class="m-10 lg:m-20">
             <p class="text-base font-medium my-4">😎 Simple way to communicate</p>
             <h1 class="text-6xl font-bold leading-normal">Actions for Accessibility in Design</h1>
-            <p class="text-base my-8 text-[#909193] lg:w-2/3 lg:text-lg xl:w-full font-medium">The fastest way to build and deploy
+            <p class="text-base my-8 text-[#909193] lg:w-2/3 lg:text-lg xl:w-full font-medium">The fastest way to build
+                and deploy
                 websites with
                 resusable
                 components.</p>
@@ -60,5 +65,6 @@
         </section>
     </div>
 </body>
+<script src="/src/index.js"></script>
 
 </html>
