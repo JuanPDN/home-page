@@ -615,6 +615,16 @@ video {
   display: none;
 }
 
+.size-1{
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.size-2{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
 .h-4\/5{
   height: 80%;
 }
@@ -768,6 +778,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-cyan-600{
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -835,29 +850,9 @@ video {
     justify-content: center;
   }
 
-  .xl\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .xl\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .xl\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
   .xl\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 }
 
