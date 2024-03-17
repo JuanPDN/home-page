@@ -1,3 +1,5 @@
+
+//cambiar tema
 const theme = document.getElementById("toogle");
 
 theme.addEventListener("change", function () {
@@ -19,14 +21,16 @@ theme.addEventListener("change", function () {
   }
 });
 
-const open = document.getElementById('open')
-const main = document.getElementById('main')
-const close = document.getElementById('close')
+
+//Cerrar y abbrir menu
+const open = document.getElementById('open');
+const main = document.getElementById('main');
+const close = document.getElementById('close');
 
 open.addEventListener('click', function(){
-    main.classList.remove('invisible')
+    main.classList.remove('invisible');
 })
 
 close.addEventListener('click', function(){
-    main.classList.add('invisible')
+    main.classList.add('invisible');
 })
