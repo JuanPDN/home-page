@@ -11,16 +11,16 @@ theme.forEach((element) => {
     if (!isChecked) {
       htmlElement.classList.remove("dark");
       htmlElement.classList.add("light");
-      logo.src = "/public/assets/alarado-icon-homepage.svg";
+      logo.src = "./public/assets/alarado-icon-homepage.svg";
       imageTheme.forEach((element) => {
-        element.src = "/public/assets/Sun_fill.svg";
+        element.src = "./public/assets/Sun_fill.svg";
       });
     } else {
       htmlElement.classList.remove("light");
       htmlElement.classList.add("dark");
-      logo.src = "/public/assets/alarado-icon-homepage-light.svg";
+      logo.src = "./public/assets/alarado-icon-homepage-light.svg";
       imageTheme.forEach((element) => {
-        element.src = "/public/assets/Moon_fill.svg";
+        element.src = "./public/assets/Moon_fill.svg";
       });
     }
   });
