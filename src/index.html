@@ -9,7 +9,7 @@
 
 <body class="bg-[#F2F9FE] w-screen dark:bg-[#111729] font-poppins text-[#223344] dark:text-white">
     <header class="flex justify-between items-center m-6 xl:px-16">
-        <img src="/public/assets/alarado-icon-homepage.svg" alt="icon-homepage" id="logo">
+        <img class="logo" src="/public/assets/alarado-icon-homepage.svg" alt="icon-homepage">
         <nav class="invisible lg:visible flex absolute top-0 right-0 bottom-0 lg:relative bg-white lg:bg-transparent p-8 lg:p-0 flex-col text-5xl lg:text-sm text-[#909193] items-center font-medium w-auto lg:justify-around"
             id="main">
             <button class="text-black lg:hidden self-end" id="close">
@@ -30,6 +30,17 @@
                 </li>
                 <li>
                     <a class="hover:text-[#111729] lg:dark:hover:text-white" href="#">Contact</a>
+                </li>
+                <li>
+                    <label class="lg:hidden flex bg-[#223344] cursor-pointer relative w-11 h-6 rounded-full" for="toogle2">
+                        <img src="/public/assets/Moon_fill_light.svg" alt="Moon_fill_light">
+                        <img src="/public/assets/Sun_fill_light.svg" alt="Sun_fill_light">
+                        <input class="sr-only peer" type="checkbox" name="checkbox" id="toogle2">
+                        <span
+                            class="w-2/5 h-4/5 bg-[#F2F9FE] absolute rounded-full left-6 transition-all duration-300 top-[2px] peer-checked:left-1">
+                            <img src="/public/assets/Sun_fill.svg" alt="Moon_fill" id="imageTheme2">
+                        </span>
+                    </label>
                 </li>
             </ul>
             
