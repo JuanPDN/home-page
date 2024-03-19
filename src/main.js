@@ -32,9 +32,9 @@ const main = document.getElementById("main");
 const close = document.getElementById("close");
 
 open.addEventListener("click", function () {
-  main.classList.remove("invisible");
+  main.classList.remove("hidden");
 });
 
 close.addEventListener("click", function () {
-  main.classList.add("invisible");
+  main.classList.add("hidden");
 });
