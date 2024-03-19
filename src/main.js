@@ -15,6 +15,7 @@ theme.forEach((element) => {
       imageTheme.forEach((element) => {
         element.src = "./assets/Sun_fill.svg";
       });
+      element.checked = false;
     } else {
       htmlElement.classList.remove("light");
       htmlElement.classList.add("dark");
@@ -22,19 +23,32 @@ theme.forEach((element) => {
       imageTheme.forEach((element) => {
         element.src = "./assets/Moon_fill.svg";
       });
+      element.checked = true;
     }
   });
 });
 
 //Cerrar y abbrir menu
-const open = document.getElementById("open");
-const main = document.getElementById("main");
-const close = document.getElementById("close");
+// const open = document.getElementById("open");
+// const main = document.getElementById("main");
+// const close = document.getElementById("close");
 
-open.addEventListener("click", function () {
-  main.classList.remove("hidden");
-});
+// open.addEventListener("click", function () {
+//   main.classList.remove("hidden");
+// });
 
-close.addEventListener("click", function () {
-  main.classList.add("hidden");
+// close.addEventListener("click", function () {
+//   main.classList.add("hidden");
+// });
+
+const menu = document.getElementById("main");
+const imageMenu = document.querySelector(".imageMenu");
+
+menu.addEventListener("change", function () {
+  const isChecked = menu.checked;
+  if (isChecked) {
+    imageMenu.src = "/src/assets/close_menu.svg";
+  } else {
+    imageMenu.src = "/src/assets/menu.svg";
+  }
 });
