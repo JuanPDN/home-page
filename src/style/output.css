@@ -558,6 +558,10 @@ video {
   border-width: 0;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
@@ -584,6 +588,14 @@ video {
 
 .top-\[2px\]{
   top: 2px;
+}
+
+.bottom-auto{
+  bottom: auto;
+}
+
+.bottom-full{
+  bottom: 100%;
 }
 
 .z-20{
@@ -639,6 +651,10 @@ video {
   height: 1.5rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-11{
   width: 2.75rem;
 }
@@ -657,10 +673,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.min-w-full{
-  min-width: 100%;
 }
 
 .translate-x-full{
@@ -764,13 +776,13 @@ video {
   font-family: "Poppins", sans-serif;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -782,31 +794,6 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -841,6 +828,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -866,13 +857,29 @@ video {
   color: rgb(17 23 41 / var(--tw-text-opacity));
 }
 
+.peer:checked ~ .peer-checked\:visible{
+  visibility: visible;
+}
+
 .peer:checked ~ .peer-checked\:left-1{
   left: 0.25rem;
+}
+
+.peer:checked ~ .peer-checked\:block{
+  display: block;
+}
+
+.peer:checked ~ .peer-checked\:flex{
+  display: flex;
 }
 
 .peer:checked ~ .peer-checked\:translate-x-0{
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.peer:checked ~ .peer-checked\:opacity-100{
+  opacity: 1;
 }
 
 @media (min-width: 640px){
