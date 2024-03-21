@@ -906,6 +906,10 @@ video {
     margin: 5rem;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -973,6 +977,10 @@ video {
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:opacity-100{
+    opacity: 1;
   }
 }
 
