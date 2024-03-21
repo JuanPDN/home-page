@@ -716,8 +716,13 @@ video {
   gap: 1rem;
 }
 
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
 .overflow-x-hidden{
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .rounded-full{
@@ -891,6 +896,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:bottom-0{
+    bottom: 0px;
+  }
+
   .sm\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
